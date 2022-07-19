@@ -1,5 +1,5 @@
 import urllib.request
-import socket # for urllib timeout
+import socket
 import os
 import yaml
 import time
@@ -15,7 +15,6 @@ import create_db
 import logging
 con = sqlite3.connect('data.db', isolation_level=None)
 cur = con.cursor()
-#socket.setdefaulttimeout(15)
 
 class Photo:
   def __init__(self, api_key, directory, user_id, group_key, camera_id, camera_friendly, shinobi_ip, thing, filename, now, actual_detection):
@@ -113,9 +112,11 @@ if log_level == "info":
   logging.basicConfig()
   logging.getLogger().setLevel(logging.INFO)
 
-
 x = []
 while True:
+  if not os.path.exists(directory):
+    os.makedirs(directory)
+    logging.info("photo directory does not exist, creating it")
   x.append(Detection( api_key, directory, user_id, group_key, camera_id, camera_friendly, shinobi_ip, thing, "", "", ""))
   #print(x[0])
 
@@ -130,5 +131,3 @@ while True:
     logging.info(x[0].actual_detection + " detected, file saved as "  + x[0].filename)
     x.pop()
     sleep(interval)
-
-
