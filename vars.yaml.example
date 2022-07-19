@@ -1,0 +1,9 @@
+directory: ./photos/
+api_key: ylmwvMxC0VLgwAvSi2crMUHtXAn1Vd
+user_id: AI6r6Zsh06
+group_key: admin
+camera_id: HcbqWH0rHj
+camera_friendly: front_door
+shinobi_ip: shinobi:8080
+object: person
+interval: 5

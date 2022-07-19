@@ -1,0 +1,2 @@
+# Detector
+Detector is a Python application that uses [Shinobi CCTV](https://shinobi.video/) to grab still images, and feeds the images to [Deepstack](https://www.deepstack.cc/) for object detection. The files are saved if the object matches the object defined in vars.yaml, and information about the object is saved to a sqlite database. This is still very much a work in progress and a hobby project.

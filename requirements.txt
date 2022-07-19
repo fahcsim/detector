@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+databases[sqlite]
+sqlalchemy
+Pillow==9.0.1
+PyYAML==6.0
+requests==2.22.0
+jinja2

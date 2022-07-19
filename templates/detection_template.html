@@ -1,0 +1,59 @@
+<html>
+   <head>
+   
+      <style>
+        body {
+            font: 600 14px/24px "Open Sans", 
+               "HelveticaNeue-Light", 
+               "Helvetica Neue Light", 
+               "Helvetica Neue", 
+               Helvetica, Arial, 
+               "Lucida Grande", 
+               Sans-Serif;
+               background-color: #000000;
+         }
+        .container {
+            display: flex;
+            align-items: center;
+
+            max-width: 90%;
+        }
+        .picture {
+            width: 95%;
+        }
+
+        .button {
+            flex-grow: 1;
+            width: 100%;
+            background-color: #4f920d;
+        }
+
+            
+         .side {
+             width: 10%;
+             height: 900px;
+             display: flex;
+             flex-direction: column;
+             align-self: flex-start;
+         }
+      </style>
+   </head>
+   
+   <body>
+   
+      <h1>Object Detector</h1>
+      
+      <div class = "container">
+         <section><img class="picture" src='{{  filename  }}' alt='{{  label  }}'}></img></section>
+
+         <aside class="side">
+            <button class="button"><a class="link", href="/detection/latest">Latest</a></button>
+            <button class="button"><a href="{{  previous_filename  }}">Previous</a></button>
+            <button class="button"><a href="{{  next_filename  }}">Next</a></button>
+
+         </aside>
+      </div>
+      
+      
+   </body>
+</html>

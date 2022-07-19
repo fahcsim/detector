@@ -1,0 +1,8 @@
+Pillow
+requests
+PyYAML
+fastapi
+uvicorn
+databases[sqlite]
+sqlalchemy
+jinja2

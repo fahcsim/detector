@@ -1,0 +1,10 @@
+photos
+photos/*
+*.jpeg
+data.db
+*.db
+vars.yaml
+vars.yml
+__pycache__/
+*.py[cod]
+*$py.class
